@@ -3,29 +3,24 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "7bcf39434337b4487b1df34ede5ca5f7",
-"/": "7bcf39434337b4487b1df34ede5ca5f7",
-"main.dart.js": "e1e953a9cbd9542a9e1bab13722a4ae3",
+  "index.html": "8d63e703256a74ef91847f37084ae825",
+"/": "8d63e703256a74ef91847f37084ae825",
+"main.dart.js": "de3710f8d586627e55626dc48ea6d0e2",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "7860bad800c79c654cf7f24fc09871d7",
-"assets/AssetManifest.json": "1df39c4262520dc1242782cb0a4f8e33",
-"assets/NOTICES": "b9208ad7cda5325c536d375d2dbbd2bd",
-"assets/FontManifest.json": "98a9d1e6e03d79e3dc4430cf5210cb0c",
+"manifest.json": "5c96996561d0c12563c6931ac02f9926",
+"assets/AssetManifest.json": "c4bafb383277e6ac1ea689ca51d9fed9",
+"assets/NOTICES": "598205ee69e83fc8648d277112cd4319",
+"assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/assets/images/SplashScreen.png": "93eb8ead4cffaf16abca64a59731f827",
-"assets/assets/images/IconLevel1.png": "37d74dbd9fa6b029a448bef3608a5e8a",
-"assets/assets/images/IconLevel3.png": "10d90ce391e667447e53ccd80d3ec901",
-"assets/assets/images/IconLevel2.png": "fd878f289772da15e5047adcee40846d",
-"assets/assets/images/IconLevel5.png": "129f9d0cfd6ff4a589b69ddea31dfb90",
-"assets/assets/images/IconLevel4.png": "076bffb700e6e0af5acf096f62b61d08",
-"assets/assets/images/RafaelRounded.png": "8f237f6ab03a4886547afcc53dc87f1a",
-"assets/assets/images/LogoSafety4Me.png": "db921a78d44f427d8df8465c8b5e6a27",
-"assets/assets/images/SplashScreenFitted.png": "479d94df8cf1df3f4d13f107801c624b",
-"assets/assets/fonts/Roboto-Regular.ttf": "11eabca2251325cfc5589c9c6fb57b46",
-"assets/assets/fonts/Roboto-Bold.ttf": "e07df86cef2e721115583d61d1fb68a6"
+"assets/assets/images/goal.png": "5b4b116d893393703352a2a75a523863",
+"assets/assets/images/ball.png": "82e0565abc512f4b95d085f37eeff6e3",
+"assets/assets/images/start_screen.png": "632e2e3b80fb16acb6e90b39bcf88463",
+"assets/assets/images/grass.png": "c235f58f2d0d74b0a026886e65769d03",
+"assets/assets/images/glove.png": "75caca5899442025f2b7fd7557111a41",
+"assets/assets/images/keeper.png": "d9fd810ba760801b1fcc06ee52f10a5e"
 };
 
 // The application shell files that are downloaded before a service worker can
