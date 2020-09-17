@@ -3,24 +3,26 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "8d63e703256a74ef91847f37084ae825",
-"/": "8d63e703256a74ef91847f37084ae825",
-"main.dart.js": "de3710f8d586627e55626dc48ea6d0e2",
+  "index.html": "633d588676be124793673bfee356d9fa",
+"/": "633d588676be124793673bfee356d9fa",
+"main.dart.js": "af90d52724ca04aa99d3c8da794a0d0a",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "5c96996561d0c12563c6931ac02f9926",
-"assets/AssetManifest.json": "c4bafb383277e6ac1ea689ca51d9fed9",
-"assets/NOTICES": "598205ee69e83fc8648d277112cd4319",
-"assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
+"manifest.json": "9243db17554fe9caff555548b83e2307",
+"assets/AssetManifest.json": "05b13ecf0b250cc260bfbdc2f65818c9",
+"assets/NOTICES": "3368f9bf18ff090f76ef24e0e8e80515",
+"assets/FontManifest.json": "0723aded2b488345ffdcc4a4da5d7695",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/assets/images/goal.png": "5b4b116d893393703352a2a75a523863",
-"assets/assets/images/ball.png": "82e0565abc512f4b95d085f37eeff6e3",
-"assets/assets/images/start_screen.png": "632e2e3b80fb16acb6e90b39bcf88463",
-"assets/assets/images/grass.png": "c235f58f2d0d74b0a026886e65769d03",
-"assets/assets/images/glove.png": "75caca5899442025f2b7fd7557111a41",
-"assets/assets/images/keeper.png": "d9fd810ba760801b1fcc06ee52f10a5e"
+"assets/packages/flutter_google_maps/assets/images/marker_a.png": "9b687e681fcc41298dfab9c1304b66d0",
+"assets/packages/flutter_google_maps/assets/images/marker_b.png": "bb8df73622307b582f89602743f4f02f",
+"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
+"assets/assets/images/RafaelRounded.png": "8f237f6ab03a4886547afcc53dc87f1a",
+"assets/assets/images/LogoSafety4Me.png": "db921a78d44f427d8df8465c8b5e6a27",
+"assets/assets/images/SplashScreenBackground.png": "479d94df8cf1df3f4d13f107801c624b",
+"assets/assets/images/LogoSafety4MeWhitePacificBlue.png": "ae2a07b9516a46dddb1fdab6631db46e",
+"assets/assets/fonts/Roboto-ThinItalic.ttf": "35a9c89aff1396595ad345e378a32aca",
+"assets/assets/fonts/Roboto-Thin.ttf": "321de678e592d0b8f44f1a82d7ca4b62"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -37,8 +39,8 @@ const CORE = [
 self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      // Provide a no-cache param to ensure the latest version is downloaded.
-      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'no-cache'})));
+      // Provide a 'reload' param to ensure the latest version is downloaded.
+      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -121,7 +123,7 @@ self.addEventListener("fetch", (event) => {
         // Either respond with the cached resource, or perform a fetch and
         // lazily populate the cache. Ensure the resources are not cached
         // by the browser for longer than the service worker expects.
-        var modifiedRequest = new Request(event.request, {'cache': 'no-cache'});
+        var modifiedRequest = new Request(event.request, {'cache': 'reload'});
         return response || fetch(modifiedRequest).then((response) => {
           cache.put(event.request, response.clone());
           return response;
