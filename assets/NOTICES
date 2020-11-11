@@ -13394,6 +13394,12 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
 --------------------------------------------------------------------------------
+shake_box
+splashscreen
+
+TODO: Add your license here.
+
+--------------------------------------------------------------------------------
 skcms
 
 Copyright (c) 2018 Google Inc. All rights reserved.
@@ -14997,11 +15003,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
---------------------------------------------------------------------------------
-splashscreen
-
-TODO: Add your license here.
-
 --------------------------------------------------------------------------------
 tcmalloc
 
