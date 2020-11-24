@@ -16,6 +16,16 @@
 
   <title>safety4me_web</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZMD93DLD0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EZMD93DLD0');
+  </script>
 </head>
 <body id="body_id">
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -24,7 +34,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=2310865944');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3305941633');
       });
     }
   </script>
