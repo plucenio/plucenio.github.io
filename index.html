@@ -14,18 +14,8 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
-  <title>safety4me_web</title>
+  <title>Safety4me</title>
   <link rel="manifest" href="manifest.json">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZMD93DLD0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EZMD93DLD0');
-  </script>
 </head>
 <body id="body_id">
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -34,10 +24,36 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3305941633');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3890784886');
       });
     }
   </script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDvFIWX-az6YSa0WgTrU0VzvHTdOAyWm34",
+      authDomain: "safety4me-d9e2a.firebaseapp.com",
+      databaseURL: "https://safety4me-d9e2a.firebaseio.com",
+      projectId: "safety4me-d9e2a",
+      storageBucket: "safety4me-d9e2a.appspot.com",
+      messagingSenderId: "387087321581",
+      appId: "1:387087321581:web:1d4ddabd2b756354ff3fe4",
+      measurementId: "G-2QMLLYCF0G"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWAGG1hdrY_kkzz_MAYhlepuA6DZjqw_c"></script> -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-rKz-5gyXz7lkMqme-a94NogIpp7Nsd8"></script>
   <script src="main.dart.js?version=7" type="application/javascript"></script>
