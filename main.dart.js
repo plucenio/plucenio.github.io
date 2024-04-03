@@ -91252,7 +91252,7 @@ a.fc(0,new A.a2P(),t.Aq)},
 wf(a){A.aER(a,"/",new A.Kb())
 A.aER(a,"/dashboard",new A.LC())}}
 A.a2O.prototype={
-$0(){var s,r=A.aMt("https://parseapi.back4app.com/functions",A.aD(["Access-Control-Allow-Origin","*","Content-Type","application/json","X-Parse-Application-Id","6CG5d345xurtrv4RuCflZTXgLCmA03p95ARYKdGt","X-Parse-REST-API-Key","9Ai5yTF23pKwmBmQO8DQrGQh2RDaKMhITIhOcszh"],t.N,t.z)),q=new A.M4($,new A.Nr(A.b([B.Bc],t.i6)),$,new A.a2M(A.aWz()),!1)
+$0(){var s,r=A.aMt("https://parseapi.back4app.com/functions",A.aD(["Access-Control-Allow-Origin","https://plucenio.github.io/","Access-Control-Allow-Methods","POST, GET","Access-Control-Allow-Headers","content-type","Content-Type","application/json","X-Parse-Application-Id","6CG5d345xurtrv4RuCflZTXgLCmA03p95ARYKdGt","X-Parse-REST-API-Key","9Ai5yTF23pKwmBmQO8DQrGQh2RDaKMhITIhOcszh"],t.N,t.z)),q=new A.M4($,new A.Nr(A.b([B.Bc],t.i6)),$,new A.a2M(A.aWz()),!1)
 q.IK$=r
 q.W8$=new A.a3l(A.aE(t.Gf))
 r=t.e_
